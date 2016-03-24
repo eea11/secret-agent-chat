@@ -61,3 +61,10 @@ def menu():
 				sheets = int(input('How many one-time pads would you like to generate? '))
 				length = int(input('What will be your maximum message length? '))
 				generate_otp(sheets, length)
+			elif choice == '2':
+				filename = input('Type in the filename of the OTP you want to use ')
+				sheet = load_sheet(filename)
+				plaintext = get_plaintext()
+				ciphertext = encrypt(plaintext, sheet)
+				filename = input('What will be the name of the encrypted file? ')
+				save_file(filename, ciphertext)
