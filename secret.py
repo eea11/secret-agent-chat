@@ -25,3 +25,5 @@ def load_file(filename):
 def save_file(filename, data):
     with open(filename, 'w') as f:
         f.write(data)
+
+def encrypt(plaintext, sheet):
