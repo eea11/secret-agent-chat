@@ -34,4 +34,4 @@ def encrypt(plaintext, sheet):
 		else:
             encrypted = (ALPHABET.index(character) + int(sheet[position])) % 26
             ciphertext += ALPHABET[encrypted]
-	
+	return ciphertext
