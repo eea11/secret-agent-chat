@@ -9,4 +9,6 @@ def generate_otp(sheets, length):
 				f.write(str(randint(0,26))+"\n")
 
 def load_sheet(filename):
-        with open(filename, "r") as f:
+    with open(filename, "r") as f:
+		contents = f.read().splitlines()
+	return contents
