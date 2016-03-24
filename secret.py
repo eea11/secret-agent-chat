@@ -68,3 +68,12 @@ def menu():
 				ciphertext = encrypt(plaintext, sheet)
 				filename = input('What will be the name of the encrypted file? ')
 				save_file(filename, ciphertext)
+			elif choice == '3':
+				filename = input('Type in the filename of the OTP you want to use ')
+				sheet = load_sheet(filename)
+				filename = input('Type in the name of the file to be decrypted ')
+				ciphertext = load_file(filename)
+				plaintext = decrypt(ciphertext, sheet)
+				print('The message reads:')
+				print('')
+				print(plaintext)
