@@ -80,3 +80,5 @@ def menu():
 			elif choice == '4':
 				exit()
 			choice = '0'
+
+menu()
