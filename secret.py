@@ -27,3 +27,4 @@ def save_file(filename, data):
         f.write(data)
 
 def encrypt(plaintext, sheet):
+	ciphertext = ''
