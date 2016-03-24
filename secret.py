@@ -45,3 +45,5 @@ def decrypt(ciphertext, sheet):
             decrypted = (ALPHABET.index(character) - int(sheet[position])) % 26
             plaintext += ALPHABET[decrypted]
     return plaintext
+
+def menu():
