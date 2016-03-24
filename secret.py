@@ -57,3 +57,7 @@ def menu():
             print('3. Decrypt a message')
             print('4. Quit the program')
             choice = input('Please type 1, 2, 3 or 4 and press Enter ')
+			if choice == '1':
+				sheets = int(input('How many one-time pads would you like to generate? '))
+				length = int(input('What will be your maximum message length? '))
+				generate_otp(sheets, length)
